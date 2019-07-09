@@ -1,6 +1,6 @@
 export class Person {
   policyno: string;
   name: string;
-  age: number;
+  employeeid: string;
   payment: number;
 }

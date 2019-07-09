@@ -28,14 +28,14 @@ export class RemittanceListComponent implements OnInit {
     HideButton() {
         this.showSelected = false;
     }
-  displayedColumns = ['policyno', 'name', 'age', 'payment', 'actionsColumn'];
+  displayedColumns = ['policyno', 'name', 'employeeid', 'payment', 'actionsColumn'];
 
   @Input() personList = [ 
-    { policyno: '123124', name: 'Mark Smith', age: 28, payment: 2500.54},
-    { policyno: '123123', name: 'Brad Johnson', age: 43, payment: 3200.62 },
-        { policyno: '123123', name: 'Oliver Williams', age: 46, payment: 3200.88 },
-            { policyno: '123126', name: 'Harry Jones', age: 42, payment: 3200.16 },
-                { policyno: '123128', name: 'Jack Davis', age: 51, payment: 3200.25 },
+    { policyno: '123124', name: 'Mark Smith', employeeid: 'FG675', payment: 2500.54},
+    { policyno: '123123', name: 'Brad Johnson', employeeid: 'MU546', payment: 3200.62 },
+        { policyno: '123123', name: 'Oliver Williams', employeeid: 'PG645', payment: 3200.88 },
+            { policyno: '123126', name: 'Harry Jones', employeeid: 'UN489', payment: 3200.16 },
+                { policyno: '123128', name: 'Jack Davis', employeeid: 'RT345', payment: 3200.25 },
     ] ;
   @Output() personListChange = new EventEmitter<Person[]>();
 

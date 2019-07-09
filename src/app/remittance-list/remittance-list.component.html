@@ -24,11 +24,11 @@
       </mat-form-field>
     </mat-cell>
   </ng-container>
-  <ng-container matColumnDef="age">
-    <mat-header-cell *matHeaderCellDef> Age </mat-header-cell>
+  <ng-container matColumnDef="employeeid">
+    <mat-header-cell *matHeaderCellDef> Employee Id </mat-header-cell>
     <mat-cell *matCellDef="let row">
       <mat-form-field floatLabel="{{ row.editing ? 'float' : 'never'}}">
-        <input matInput [formControl]="row.validator.controls['age']" type="number" placeholder="Age" [(ngModel)]="row.currentData.age">
+        <input matInput [formControl]="row.validator.controls['employeeid']" type="string" placeholder="Employee Id" [(ngModel)]="row.currentData.employeeid">
       </mat-form-field>
     </mat-cell>
   </ng-container>

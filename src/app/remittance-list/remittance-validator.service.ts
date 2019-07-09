@@ -8,7 +8,7 @@ export class RemittanceValidatorService implements ValidatorService {
     return new FormGroup({
       'policyno': new FormControl(),
       'name': new FormControl(null, Validators.required),
-      'age': new FormControl(),
+      'employeeid': new FormControl(),
       'payment': new FormControl(null, Validators.required),
       });
   }
