@@ -5,6 +5,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import {WebcamModule} from 'ngx-webcam';
+import {MatExpansionModule} from '@angular/material/expansion';
 import {
   MatIconModule,
   MatButtonModule,
@@ -13,6 +14,7 @@ import {
   MatDividerModule,
   MatListModule,
   MatSnackBarModule,
+
 } from '@angular/material';
 
 import { AppComponent } from './app.component';
@@ -57,6 +59,7 @@ const routes: Routes = [
     MatListModule,
     MatSnackBarModule,
     WebcamModule,
+        MatExpansionModule,
     RouterModule.forRoot(routes)
   ],
   exports: [RouterModule],

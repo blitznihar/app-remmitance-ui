@@ -4,11 +4,33 @@
     <p class="lead">Watchout for Payments Overdue and New bills</p>
   </div>
 </div>
+<mat-accordion>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Current Month
+      </mat-panel-title>
+      <mat-panel-description>
+       Current Month Bill is Ready
+      </mat-panel-description>
+    </mat-expansion-panel-header>
 
-<ul class="list-group">
+      <ul class="list-group">
   <li class="list-group-item d-flex justify-content-between align-items-center">Jul 2019 <span class="badge badge-warning">New</span> 
    <a routerLinkActive="active" routerLink="/remittance-list" class="btn btn-primary right-aligned">Make Payment</a>
-</li>
+</li></ul>
+  </mat-expansion-panel>
+  <mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Prior Month
+      </mat-panel-title>
+      <mat-panel-description>
+        View Prior Month Payments
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <ul class="list-group">
   <li class="list-group-item d-flex justify-content-between align-items-center">Jun 2019 <span class="badge badge-secondary badge-danger">Payment Overdue</span> <a routerLinkActive="active" routerLink="/remittance-list" class="btn btn-primary right-aligned">Make Payment</a></li>
   <li class="list-group-item d-flex justify-content-between align-items-center">May 2019 
     <span class="badge badge-success">Paid</span> <button type="button" class="btn badge-secondary right-aligned">
@@ -50,3 +72,5 @@
 </button>
   </li>
 </ul>
+  </mat-expansion-panel>
+</mat-accordion>
